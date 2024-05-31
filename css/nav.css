@@ -1,0 +1,137 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: sans-serif;
+
+  }
+  @font-face {
+    font-family: YatraOne;
+    src: url(YatraOne-Regular.ttf);
+}
+
+
+  .logo {
+      color: white;
+      font-size: 30px;
+      font-family: 'YatraOne';
+      word-spacing: 1px;
+      text-shadow: 2px 2px 4px #000000;
+  }
+
+  .logo span {
+      color: red;
+      font-family: 'YatraOne';
+      word-spacing: 1px;
+  }
+
+  nav {
+      top: 0;
+      height: 80px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5%;
+      position: relative;
+      position: sticky;
+      z-index: 1000;
+      box-shadow: 0 0 10px #000;
+      background: rgb(0, 0, 0, 0.7);
+      border-radius: 10px;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+  }
+
+  nav ul li {
+      text-align: center;
+      padding: 10px 30px;
+      position: relative;
+  }
+
+  nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s;
+  }
+
+  nav ul li a:hover {
+      color: red;
+      transition: .6s;
+  }
+
+  .fas {
+      float: right;
+      margin-left: 10px;
+      padding-top: 3px;
+  }
+
+
+  .dropdown-menu {
+      display: none;
+  }
+
+  nav ul li:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 1000;
+      box-shadow: 0 0 10px #000;
+      background: rgb(0, 0, 0, 0.7);
+      border-radius: 5px;
+  }
+
+  nav ul li:hover .dropdown-menu ul {
+      display: block;
+      margin: 10px;
+  }
+
+  nav ul li:hover .dropdown-menu ul li {
+      width: 150px;
+      padding: 10px;
+  }
+
+  .dropdown-menu-1 {
+      display: none;
+  }
+
+  .dropdown-menu ul li:hover .dropdown-menu-1 {
+      display: block;
+      position: absolute;
+      left: 150px;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 0 10px #000;
+      background: rgb(0, 0, 0, 0.7);
+      border-radius: 10px;
+  }
+
+  .btn {
+      border: none;
+      background: rgb(197, 56, 56);
+      padding: 12px 30px;
+      border-radius: 30px;
+      color: white;
+      font-weight: 15px;
+      transition: .4s;
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .btn:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+  }
